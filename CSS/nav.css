@@ -6,12 +6,10 @@
 /* --------------------------- Navigasjon mobil---------------------*/
 header{
     background-image: url('../img/nasa.PNG');
-   /*  position: sticky;  */
     top: 0;
     width: 100%;
     background-repeat: no-repeat;
-     background-size: cover; 
-  /*   background-size: contain; */
+    background-size: cover; 
     background-position: center;
     margin-bottom: -20px;
     height: 400px;
@@ -41,18 +39,18 @@ a{
 }
 
 .container{
-    width: 1600px;
+    width: 100%;
     margin: auto;
+    
 }
 
 .subcontainer{
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 
 .navbar{
     width: 100%;
-    /* min-height: 70px; */
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -61,7 +59,6 @@ a{
 
 .nav-menu{
     display:flex;
-    /* justify-content: space-between; */
     align-items: center;
     gap: 34px;
     margin-bottom: -25px;
@@ -84,8 +81,8 @@ a{
     width: 25px;
     height: 3px;
     margin: 5px 0;
-    transition: all 0.3s ease;
-    background-color: white;
+    transition: all 0.5s ease;
+    background-color: rgb(255, 255, 255);
 }
 
 @media(max-width:1600px){
@@ -97,7 +94,10 @@ a{
     }
 } 
 
-
+/* for inspirasjon til hamburger meny, 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor
+https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
+*/
 @media(max-width: 1024px){ 
     .hamburger{
         display:block;
@@ -113,27 +113,30 @@ a{
         transform: translateY(-8px) rotate(-45deg);
     }
     .nav-menu{
-        position: sticky;
-        left: -100%;
+        position: relative ;
+        left: -120%;
         top: 70px;
         flex-direction: column;
-        background-color: navy;
+        background-color: gainsboro;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        /* top: 186px;
-        height: 77.1vh;  */;
-
+         top: 191px;
+       
+        
     }
     .nav-item{
         margin: 16px 0;
-        border:5px white solid;
+        border:5px black solid;
         width: 100%;
         height: 100%;
-        
+        align-self: center;
+    }
+    a.nav-link{
+        color: black;
     }
     .navbar{
-        margin-top: 130px;
+        margin-top: 90px;
     }
     
     .nav-menu.active{
