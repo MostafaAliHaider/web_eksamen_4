@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/favicon.png">
-        <title>Mostafa</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Meta tags starter her -->
+    <meta property="fb:app_id" content="">
+    <meta property="og:title" content="Kontakt oss">
+    <meta property="og:description" content="Her har du muligheten til å kontakte oss">
+    <meta property="og:url" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/web_eksamen_4/kontakt.html">
+    <!-- Twitter kort -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kontakt oss her">
+    <title>Kontakt oss</title>
+</head>
+
 <body>
     <div class="grid-container">
 
@@ -17,13 +27,13 @@
             <div class="container">
                 <div class="subcontainer">
                     <nav class="navbar">
-                        <a href="hjem.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+                        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
                         <ul class="nav-menu">
                             <li class="nav-item">
-                                <a href="hjem.html" class="nav-link">Hjem</a>
+                                <a href="index.html" class="nav-link">Hjem</a>
                             </li>
                             <li class="nav-item">
-                                <a href="uuvsseo.html" class="nav-link">UU vs SEO</a>
+                                <a href="seouu.html" class="nav-link">UU vs SEO</a>
                             </li>
                             <li class="nav-item">
                                 <a href="cms.html" class="nav-link">CMS</a>
@@ -44,28 +54,81 @@
                 </div>
             </div>
         </header>
-    <main>
-        <section class="top-section-innhold">
-            
-            <h2>Kontakt oss</h2>
-                <article class="innhold-design">
-                    <h3>Under her finner du kontaktinfo</h3>
-                    <figure>
-                        <img src="img/nasa.PNG" alt="nasa bildet">
-                        <figcaption><i>Bildet er hentet fra unsplash</i></figcaption>
-                    </figure>
-                    <p>Velkommen til min nettside, jajsjsjajsdksdasdk
-                        skldaksldklaskda
-                        lksdkassssssssssssssssssssssslk kdk ddddddddddd lkdlkkkkkkkkkkkkkkkkkk lkdlklaaaaaaaaaaa
-                    </p>
+        <main>
+            <section class="top-section-innhold">
+
+                <h2>Kontakt oss</h2>
+                <article class="innhold-design kontakt-design">
+
+                    <!-- kilder brukt under er https://www.w3schools.com/html/html_forms.asp og https://www.youtube.com/watch?v=-xiXI7WT2ik&ab_channel=CodeRange
+                    og arbeidet mitt fra tidligere år. https://itstud.hiof.no/~mostafah/oblig5_/htmlskjema.html
+                    -->
+
+                    <h3>Registreringsskjema</h3>
+                    <div id="kontakt">
+                        <form action="/skjema.html">
+                            <label>Navn:<br>
+                                <input type="text" name="name" required type="name" placeholder="Ola Normann">
+                            </label>
+                            <br>
+                            <label for="email">E-post:<br> </label>
+                            <input required type="email" id="email" name="email" placeholder="ola.normann@hiof.no">
+                            <br>
+                            <label for="phone">Tlf nummer:<br></label>
+                            <input type="tel" id="phone" name="phone" required="phone" maxlength="8"
+                                placeholder="45678900">
+                            <br>
+                            <label for="lang_melding"><span class="required"></span>Lenger melding:</label><br>
+                            <textarea id="lang_melding" name="lang_melding" cols="30" rows="5" required></textarea><br>
+                            <button type="submit" value="submit">Send inn</button>
+                        </form>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882761207628!2d11.35061461557406!3d59.1292502340913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1668521858446!5m2!1sno!2sno"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <h3>Under finner du kontaktinformasjonen vår</h3>
+                    
+                        <ul id="kontaktfont">
+                            <li><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                <h3>E-post</h3>
+                                
+                            </li>
+                            <li><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                                <h3>Kontaktnummer</h3>
+                            </li>
+                            <li><i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
+                                <h3>Postadresse</h3>
+                               
+                            </li>
+                            <li></li>
+                        </ul>
+                  <!--   <div id="kontaktfont">
+                        <span id="email">
+                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                            <h3>E-post</h3>
+                            <p>hhhhhhh</p>
+                        </span>
+                        <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
+                        <span id="telefon">
+                            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                                <h3>Kontaktnummer</h3>
+                        </span>
+                        <span id="adresse">
+                            <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
+                        </span>
+                    </div> -->
                 </article>
-            
-        </section>
-    </main>
-    <footer>
-        Mostafa Ali Haider || Mostafah@hiof.no || Webutvikling || Høgskolen i Østfold
-    </footer>
+
+
+            </section>
+        </main>
+        <footer>
+            Mostafa Ali Haider || Mostafah@hiof.no || Webutvikling || Høgskolen i Østfold
+        </footer>
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>

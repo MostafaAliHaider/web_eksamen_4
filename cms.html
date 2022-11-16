@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/favicon.png">
-        <title>Mostafa</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Sosiale meta tags -->
+    <!-- Open graph -->
+    <meta property="og:url"           content="https://itstud.hiof.no/~mostafah/web_eksamen_4/cms.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="EHEHEHEH" />
+    <meta property="og:description"   content="Lær hvordan CMS fungerer og hvilke forskjellige CMS-typer det finnes" />
+    <meta property="og:image"         content="" />
+
+    <!-- Twitter kort -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Finn ut hva CMS er">
+    <!-- ved å teste twitter validatoren fikk jeg opp at jeg ikke hadde noen errors, men jeg fikk likevel ikke opp "kortet". Jeg undersøkte hva det betydde og det var gode tegn at jeg ikke fikk errors.. klarer ikke helt å se om det er noe feil eller ikke. -->
+
+    <title>CMS</title>
+</head>
+
 <body>
     <div class="grid-container">
 
@@ -17,13 +32,13 @@
             <div class="container">
                 <div class="subcontainer">
                     <nav class="navbar">
-                        <a href="hjem.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+                        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
                         <ul class="nav-menu">
                             <li class="nav-item">
-                                <a href="hjem.html" class="nav-link">Hjem</a>
+                                <a href="index.html" class="nav-link">Hjem</a>
                             </li>
                             <li class="nav-item">
-                                <a href="uuvsseo.html" class="nav-link">UU vs SEO</a>
+                                <a href="seouu.html" class="nav-link">UU vs SEO</a>
                             </li>
                             <li class="nav-item">
                                 <a href="cms.html" class="nav-link">CMS</a>
@@ -44,26 +59,198 @@
                 </div>
             </div>
         </header>
-    <main>
-        <section class="top-section-innhold">
-                <h2>CMS</h2>
+        <main>
+
+            <section class="top-section-innhold">
                 <article class="innhold-design">
-                    <h3>Hva er</h3>
-                    <figure>
-                        <img src="img/nasa.PNG" alt="nasa bildet">
-                        <figcaption><i>Bildet er hentet fra unsplash</i></figcaption>
-                    </figure>
-                    <p>Velkommen til min nettside, jajsjsjajsdksdasdk
-                        skldaksldklaskda
-                        lksdkassssssssssssssssssssssslk kdk ddddddddddd lkdlkkkkkkkkkkkkkkkkkk lkdlklaaaaaaaaaaa
-                    </p>
+
+                    <article>
+                        <h2>CMS - innholdshåndtering</h2>
+                        <p>
+                            CMS står for "Content Management Systems", og er systemer for innholdshåndtering som gir oss
+                            et
+                            grensesnitt hvor vi kan enkelt behandle innholdet vårt. Som bruker kan du enkelt publisere
+                            innhold som sider, artikler etc. Når det gjelder design så er det ofte at du ikke trenger å
+                            gjøre mye da systemet gjør dette automatisk.
+                        </p>
+
+                        <h3> Headless vs Seamless CMS</h3><br>
+                        <h4>Seamless CMS</h4>
+                        <p>Seamless CMS er den tradisjonelle CMS, et eksempel på slikt er WordPress. Wordpress er en
+                            type
+                            publiseringssystem der du har alt samlet sammen. Et panel der du kan redigere, opprette og
+                            slette
+                            innhold. Du har nettside maler og verktøy som forbedrer nettsiden som kan lastes ned, også
+                            kalt
+                            plugins. Alt av innhold, endringer, nedlastinger etc. vil bli lagret i en database.
+                            Her er ikke fornkunnskaper nødvendig. Dersom du som bruker ønsker å bruke et CMS, så er det
+                            relativt enkelt da ingen kode er nødvendig. Ved riktig bruk av plugins tilgjengelig i det
+                            brukervennlige grensesnittet kan du oppnå det du ønsker ved en nettside. Alt av farger,
+                            textstiler etc.
+                        </p>
+                        <section >
+                            <h3>Formålet med CMS</h3>
+                            <p>Målet med et CMS er å gjøre det enklere for deg som bruker å administrere og publisere innhold (som nevnt tidligere). Dette kan brukes både innad en organisasjon (intranett eller ekstranett) og/eller for å tilgjengeliggjøre informasjon for folk via nettsider på internett. </p>
+                            <p>Meningen med CMS er for at brukerne skal enklere samarbeide om å produsere innholdet sitt. Med CMS får du også en del tekniske fordeler</p>
+                            <p>Det finnes mange forskjellige CMS systemer vi kan velge mellom, alle har sine styrker og svakheter. Episerver er den mest brukte CMS'et blant store bedrifter og organisasjoner. Men så har vi WordPress, Joomla, Liferay etc er populært blant bloggere og andre småbedrifter.</p>
+                            <h4>Under har vi listet flere CMS-løsninger</h4>
+                            <ul class="punkter">
+                                <li>WordPress</li>
+                                <li>Typo3</li>
+                                <li>Joomla</li>
+                                <li>Liferay</li>
+                                <li>Wix</li>
+                                <li>Weebly</li>
+                                <li>Episerver</li>
+                            </ul>
+                            <p>WordPress er den største av dem. Totalt er det ca 40% av nettsidene bygget med Wordpress, som er flere hundre millioner sider. CMS kan være hjelpsomme for mange bedrifter på mange måter, vi kan se på eksempelet til WordPress i avsnittet over.</p>
+                            <h3>Fordeler og ulemper med et CMS</h3><br>
+                            <h4>Fordeler</h4>
+                            <ul class="punkter">
+                                <li>Rask utvikling av nettsiden - trenger ikke å bruke tid på koding</li>
+                                <li>Mindre kode tilsvarer mindre kode å vedlikeholde - Vedlikehold blir utført av tredjepart eller evt automatisk.</li>
+                                <li>Plugins og Widgets - Du kan enkelt legge til utvidelser og moduler for å skaffe funksjonalitet. </li>
+                            </ul>
+                            <h4>Ulemper</h4>
+                            <ul class="punkter">
+                                <li>Hastighet - kan bli redusert grunnet unødvendig funksjonalitet og kode som blir lastet ned automatisk.</li>
+                                <li>Fleksibilitet - Da du ikke alltid har kontroll over siden med et CMS. Brukeren kan oppleve vanskeligheter med å legge til eller endre funksjonalitet</li>
+                                <li>Plugins og Widgets - En bruker av dette kan enkelt bli avhengig av tredjeparten for funksjonaliteten. Det kan føre til at bruker laster ned for avanserte funksjoner.</li>
+                            </ul>
+                        </section>
+                        <h4>Headless CMS</h4>
+                        <section id="headless">
+                            <p>Imotsetning til seamless CMS så jobber headless kun med "backend". Du kan ta for deg en
+                                fullstendig robot, der hodet representerer "frontend" og resten av kroppen er "backend".
+                                Siden det ikke jobbes med frontend her, så har ikke roboten et hodet, som gjør den
+                                headless.
+                                Headless CMS kan bli brukt til redigering og lagring av innhold, men er ikke "ansvarlig"
+                                for hvordan det blir presentert visiuelt til brukeren. Frontend utviklere som er
+                                ansvarlig for presentasjonen, har nå muligheten til å jobbe med hvilke som helst
+                                rammeverk de ønsker.
+                                Når innholdet i backend er laget ferdig, så er det klart for å bli publisert. Nå vil nye
+                                frontend "laget" spørre om innholde via en <i>Application Programming Interface</i> også
+                                kjent som API. API er kode som brukes for å utveksle data mellom backend og frontend.
+                                Etter at dette har skjedd, vil frontend ha en oppgave om å presentere innholdet.
+                                Så, i dette tilfelle kan vi se at backend "kroppen" ikke er sammensatt med hodet, men de
+                                er likevel koblet sammen via API.
+
+                            </p>
+                            <figure>
+                                <img id="headless-img" src="img/headless.png" alt="hodeløs robot">
+                                <figcaption><i>https://unsplash.com/photos/vZFJfIsEa0E</i></figcaption>
+                            </figure>
+                        </section>
+
+
+
+
+                    </article>
+
+
+                  <!-- Tabell starter her -->
+                    <article class="article-tabell">
+                        <div class="tabell">
+                            <!-- top boxes. første box til venstre er tom -->
+                            
+                            <section class="top top-2"><h4>Fordeler</h4></section>
+                            <section class="top top-3"><h4>Ulemper</h4></section>
+                            <section class="top top-4"><h4>Likheter/Ulikheter</h4></section>
+
+                            <!-- cms titler på venstre  -->
+                            <section class="cms cms-1"><h4>CCMS</h4></section>
+                            <section class="cms cms-2"><h4>ECM</h4></section>
+                            <section class="cms cms-3"><h4>WCMS</h4></section>
+
+                            <!-- fordel boxes -->
+                            <section class="fordel fordel-1">
+                                <p>CCMS jobber på et granulært nivå som deler opp innholde i komponenter. Det gir større konsistens og nøyaktighet til innholdsadministrasjonen.</p>
+                            </section>
+                            <section class="fordel fordel-2">
+                                <p>Teknologiske løsninger for å drive, lagre og organisere dokumenter. </p>
+                            </section>
+                            <section class="fordel fordel-3">
+                                <p>Sparer deg tid da den forbedrer arbeidsflyten, ved at den publiserer innholdet automatisk. </p>
+                            </section>
+
+                            <!-- ulempe boxes -->
+                            <section class="ulempe ulempe-1">
+                                <p>Det kan fort bli mange filer å ha oversikt over</p>
+                                <p>Krever tidsinvestering i starten av prosjekt for å bryte ned de ulike innholdsblokkene, og sikre at elementene er organisert godt.</p>
+                            </section>
+                            <section class="ulempe ulempe-2">
+                                <p>Kan oppleve vanskeligheter for å kommunisere, og at det kan koste mye.</p>
+                            </section>
+                            <section class="ulempe ulempe-3">
+                                <p>Det at innholdet blir publisert automatisk, kan føre til at ting blir lagt ut ved uhell..</p>
+                            </section>
+
+                            <!-- likhet boxes -->
+                            <section class="likhet likhet-1">
+                                <h5>Likhet</h5>
+                                <p> Gir organisasjoner muligheter til å effektivisere forretningsprosesser og den daglige driften.
+                                </p>
+                                <p>Kontroll og vedlikehold</p>
+                            </section>
+                            <section class="likhet likhet-2">
+                                <h5>Ulikheter</h5>
+                                <p>CCMS kan gjenbrukes, ikke de andre.</p>
+                                <p>ECM, kan dele informasjonen internt.</p>
+                            </section>
+                            <section class="likhet likhet-3">
+                                <h5>Likheter</h5>
+                                <p>Kontroll og vedlikehold</p>
+                                <p>Publisering av innhold</p>
+                            </section>
+
+                            
+                        </div>
+                        
+                    </article>
+                    <section class="kilder">
+                        <h3>Kilder og referanse:</h3>
+                        <ul>
+                            <li>⇨<a class="kilder"
+                                    href="https://www.youtube.com/watch?v=av2CL4nusg4&ab_channel=Parttrap">https://www.youtube.com/watch?v=av2CL4nusg4&ab_channel=Parttrap</a>
+                            </li>
+                            <li>⇨<a class="kilder"
+                                    href="https://www.visma.no/blogg/hva-er-api-sporsmal-og-svar/">https://www.visma.no/blogg/hva-er-api-sporsmal-og-svar/</a>
+                            </li>
+                            <li>⇨<a class="kilder"
+                                    href="https://www.mentimeter.com/app/presentation/alug53jbdcanf8sobtepwfwd1n2ov3vd/vzphojjxhkzu">https://www.mentimeter.com/app/presentation/alug53jbdcanf8sobtepwfwd1n2ov3vd/vzphojjxhkzu</a>
+                            </li>
+                            <li>⇨<a class="kilder"
+                                    href="https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms">https://guilty.no/blogg/headless-cms-slik-er-det-til-forskjell-fra-et-tradisjonelt-cms</a>
+                            </li>
+                            <li>⇨<a class="kilder"
+                                href="https://www.ixiasoft.com/types-of-content-management-systems/">https://www.ixiasoft.com/types-of-content-management-systems/</a>
+                        </li>
+                        <li>⇨<a class="kilder"
+                            href="https://www.author-it.com/blog/is-your-ccms-solution-right-sized-for-your-organization/">https://www.author-it.com/blog/is-your-ccms-solution-right-sized-for-your-organization/</a>
+                    </li>
+                        
+                        </ul>
+                    </section>
                 </article>
-        </section>
-    </main>
-    <footer>
-        Mostafa Ali Haider || Mostafah@hiof.no || Webutvikling || Høgskolen i Østfold
-    </footer>
+            </section>
+        </main>
+
+        <footer>
+            Mostafa Ali Haider || Mostafah@hiof.no || Webutvikling || Høgskolen i Østfold
+            <section class="wrapper">
+                <h4>Del på sosiale medier her: </h4><br>
+                <div class="media">
+                    <ul>
+                        <li> <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>.</a></li>
+                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i>.</a></li>
+                        <li><a href="https://no.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i>.</a></li>
+
+                    </ul>
+                </div>
+            </section>
+        </footer>
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
