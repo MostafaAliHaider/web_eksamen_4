@@ -7,15 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <!-- Meta tags starter her -->
-    <meta property="fb:app_id" content="">
-    <meta property="og:title" content="Kontakt oss">
-    <meta property="og:description" content="Her har du muligheten til å kontakte oss">
-    <meta property="og:url" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/web_eksamen_4/kontakt.html">
+   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+    <!-- Open graph kort -->
+    <meta property="og:title" content="Ta kontakt med oss her">
+    <meta property="og:description" content="På denne siden har du muligheten til å kontakte oss, du finner kontaktinformasjonen og har også mulighetent til å kontakte oss ved å fylle ut et skjema. ">
+    <meta property="og:url" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/cms.html">
+    <meta property="og:image" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/img/headless.png">
+    <meta property="og:image:alt" content="headless robot">
+    <meta property="og:site_name" content="WebMos">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:type" content="article">
+
     <!-- Twitter kort -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kontakt oss her">
+    <meta name="twitter:title" content="Lurer du på hva CMS er?">
+    <meta name="twitter:description" content="På denne siden får du vite hva headless og seamless cms er, hvilke typer og systemer som finnes samt fordelene og ulempene med et slikt verktøy.">
     <title>Kontakt oss</title>
 </head>
 
@@ -57,7 +63,7 @@
         <main>
             <section class="top-section-innhold">
 
-                <h2>Kontakt oss</h2>
+                <h2>Kontaktside </h2>
                 <article class="innhold-design kontakt-design">
 
                     <!-- kilder brukt under er https://www.w3schools.com/html/html_forms.asp og https://www.youtube.com/watch?v=-xiXI7WT2ik&ab_channel=CodeRange
@@ -88,21 +94,31 @@
                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <h3>Under finner du kontaktinformasjonen vår</h3>
+                
                     
                         <ul id="kontaktfont">
+                           <div class="contact-border">
                             <li><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
                                 <h3>E-post</h3>
-                                
                             </li>
+                            <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
+                           </div>
+                           <div class="contact-border">
                             <li><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
                                 <h3>Kontaktnummer</h3>
                             </li>
-                            <li><i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
-                                <h3>Postadresse</h3>
-                               
-                            </li>
-                            <li></li>
+                            <p>Sentralbord: 69 60 80 00</p>
+                            <p>Faks: 69 60 80 01</p>
+                           </div>
+                           <div>
+                               <li><i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
+                                   <h3>Postadresse</h3>
+                               </li>
+                               <p>Høgskolen i Østfold</p>
+                               <p>Postboks 700</p>
+                               <p>1757 HALDEN</p>
+                           </div>
+                           
                         </ul>
                   <!--   <div id="kontaktfont">
                         <span id="email">

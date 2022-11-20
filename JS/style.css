@@ -7,8 +7,8 @@
  *{ box-sizing: border-box;
    margin:0;
    padding: 0;
-   
-}
+/*    overflow: hidden;
+ */}
 
 /* ---------------------------------- MOBIL -------------------------------------- */
 
@@ -199,7 +199,24 @@ footer {
    cursor: pointer;
 }
 
-
+/* .media ul li:before{
+   position: absolute;
+   content: '';
+   top: 0;
+   left: 0;
+   height: inherit;
+   width: inherit;
+   background: #d35400;
+   border-radius: 50%;
+   transform: scale(.9);
+   z-index: -1;
+   transition: .5s;
+} 
+ .media ul li:hover:before{
+   filter: blur(3px);
+   transform: scale(1.2);
+   box-shadow: 0 0 15px #d35400;
+ }  */
 
 /* html-skjema */
 input[type="text"] {
@@ -247,11 +264,11 @@ iframe{
 #kontaktfont a{
    color: #558e93;
    text-decoration: underline;
-   margin-left: 15px;
+   margin-left: 46px;
    margin-bottom: 3px;
 }
 #kontaktfont p{
-   margin-left: 15px;
+   margin-left: 47px;
 }
 .contact-border{
    border-bottom: #515451 1px solid;
