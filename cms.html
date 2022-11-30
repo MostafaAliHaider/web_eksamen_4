@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- Open graph kort -->
     <meta property="og:title" content="Lurer du på hva CMS er?">
     <meta property="og:description" content="På denne siden får du vite hva headless og seamless cms er, hvilke typer og systemer som finnes samt fordelene og ulempene med et slikt verktøy.">
     <meta property="og:url" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/cms.html">
-    <meta property="og:image" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/img/headless.png">
+    <meta property="og:image" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/img/analyse.png">
     <meta property="og:image:alt" content="headless robot">
     <meta property="og:site_name" content="WebMos">
     <meta property="og:locale" content="nb_NO">
     <meta property="og:type" content="article">
+    <meta name="description" content="Nettsiden her består av forklaring av hva CMS er, og noen eksempler som viser dette.">
 
     <!-- Twitter kort -->
     <meta name="twitter:card" content="summary_large_image">
@@ -34,7 +37,7 @@
             <div class="container">
                 <div class="subcontainer">
                     <nav class="navbar">
-                        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+                        <a href="index.html"><img class="logo" src="img/mostafa-web-low-resolution-logo-color-on-transparent-background.png" alt="logo"></a>
                         <ul class="nav-menu">
                             <li class="nav-item">
                                 <a href="index.html" class="nav-link">Hjem</a>
@@ -65,7 +68,7 @@
 
             <section class="top-section-innhold">
                 <article class="innhold-design">
-
+                    
                     <article>
                         <h2>CMS - innholdshåndtering</h2>
                         <p>
@@ -75,7 +78,7 @@
                             innhold som sider, artikler etc. Når det gjelder design så er det ofte at du ikke trenger å
                             gjøre mye da systemet gjør dette automatisk.
                         </p>
-
+                        
                         <h3> Headless vs Seamless CMS</h3><br>
                         <h4>Seamless CMS</h4>
                         <p>Seamless CMS er den tradisjonelle CMS, et eksempel på slikt er WordPress. Wordpress er en
@@ -90,6 +93,29 @@
                             brukervennlige grensesnittet kan du oppnå det du ønsker ved en nettside. Alt av farger,
                             textstiler etc.
                         </p>
+                        <figure id="cms-figure">
+                            <img id="headless-img" src="img/headless.png" alt="hodeløs robot">
+                            <figcaption><i>https://unsplash.com/photos/vZFJfIsEa0E</i></figcaption>
+                        </figure>
+                        <section id="headless">
+                            <h4>Headless CMS</h4>
+                            <p>Imotsetning til seamless CMS så jobber headless kun med "backend". Du kan ta for deg en
+                                fullstendig robot, der hodet representerer "frontend" og resten av kroppen er "backend".
+                                Siden det ikke jobbes med frontend her, så har ikke roboten et hodet, som gjør den
+                                headless.
+                                Headless CMS kan bli brukt til redigering og lagring av innhold, men er ikke "ansvarlig"
+                                for hvordan det blir presentert visiuelt til brukeren. Frontend utviklere som er
+                                ansvarlig for presentasjonen, har nå muligheten til å jobbe med hvilke som helst
+                                rammeverk de ønsker.
+                                Når innholdet i backend er laget ferdig, så er det klart for å bli publisert. Nå vil nye
+                                frontend "laget" spørre om innholde via en <i>Application Programming Interface</i> også
+                                kjent som API. API er kode som brukes for å utveksle data mellom backend og frontend.
+                                Etter at dette har skjedd, vil frontend ha en oppgave om å presentere innholdet.
+                                Så, i dette tilfelle kan vi se at backend "kroppen" ikke er sammensatt med hodet, men de
+                                er likevel koblet sammen via API.
+
+                            </p>
+                        </section>
                         <section >
                             <h3>Formålet med CMS</h3>
                             <p>Målet med et CMS er å gjøre det enklere for deg som bruker å administrere og publisere innhold (som nevnt tidligere). Dette kan brukes både innad en organisasjon (intranett eller ekstranett) og/eller for å tilgjengeliggjøre informasjon for folk via nettsider på internett. </p>
@@ -120,29 +146,7 @@
                                 <li>Plugins og Widgets - En bruker av dette kan enkelt bli avhengig av tredjeparten for funksjonaliteten. Det kan føre til at bruker laster ned for avanserte funksjoner.</li>
                             </ul>
                         </section>
-                        <h4>Headless CMS</h4>
-                        <section id="headless">
-                            <p>Imotsetning til seamless CMS så jobber headless kun med "backend". Du kan ta for deg en
-                                fullstendig robot, der hodet representerer "frontend" og resten av kroppen er "backend".
-                                Siden det ikke jobbes med frontend her, så har ikke roboten et hodet, som gjør den
-                                headless.
-                                Headless CMS kan bli brukt til redigering og lagring av innhold, men er ikke "ansvarlig"
-                                for hvordan det blir presentert visiuelt til brukeren. Frontend utviklere som er
-                                ansvarlig for presentasjonen, har nå muligheten til å jobbe med hvilke som helst
-                                rammeverk de ønsker.
-                                Når innholdet i backend er laget ferdig, så er det klart for å bli publisert. Nå vil nye
-                                frontend "laget" spørre om innholde via en <i>Application Programming Interface</i> også
-                                kjent som API. API er kode som brukes for å utveksle data mellom backend og frontend.
-                                Etter at dette har skjedd, vil frontend ha en oppgave om å presentere innholdet.
-                                Så, i dette tilfelle kan vi se at backend "kroppen" ikke er sammensatt med hodet, men de
-                                er likevel koblet sammen via API.
-
-                            </p>
-                            <figure>
-                                <img id="headless-img" src="img/headless.png" alt="hodeløs robot">
-                                <figcaption><i>https://unsplash.com/photos/vZFJfIsEa0E</i></figcaption>
-                            </figure>
-                        </section>
+                        
 
 
 
@@ -237,20 +241,18 @@
             </section>
         </main>
 
+   
+
         <footer>
             Mostafa Ali Haider || Mostafah@hiof.no || Webutvikling || Høgskolen i Østfold
-            <section class="wrapper">
-                <h4>Del på sosiale medier her: </h4><br>
-                <div class="media">
-                    <ul>
-                        <li> <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i>.</a></li>
-                        <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i>.</a></li>
-                        <li><a href="https://no.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i>.</a></li>
-
-                    </ul>
-                </div>
-            </section>
+            <div id="share">
+                <h3>Del her:</h3>
+                <a href="https://www.pinterest.com/"  class="fa fa-pinterest fa-2x" aria-label="Pinterest" target="_blank"></a>
+                <a href="https://www.twitter.com/" class="fa fa-twitter fa-2x" aria-label="Twitter" target="_blank"></a>
+                <a href="https://www.facebook.com/" class="fa fa-facebook fa-2x" aria-label="Pinterest" target="_blank"></a>
+            </div>
         </footer>
+        
     </div>
     <script src="js/script.js"></script>
 </body>

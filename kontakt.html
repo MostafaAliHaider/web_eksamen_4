@@ -7,21 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/favicon.png">
-   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Open graph kort -->
     <meta property="og:title" content="Ta kontakt med oss her">
-    <meta property="og:description" content="På denne siden har du muligheten til å kontakte oss, du finner kontaktinformasjonen og har også mulighetent til å kontakte oss ved å fylle ut et skjema. ">
+    <meta property="og:description"
+        content="På denne siden har du muligheten til å kontakte oss, du finner kontaktinformasjonen og har også mulighetent til å kontakte oss ved å fylle ut et skjema. ">
     <meta property="og:url" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/cms.html">
     <meta property="og:image" content="https://itstud.hiof.no/~mostafah/web_eksamen_4/img/headless.png">
     <meta property="og:image:alt" content="headless robot">
     <meta property="og:site_name" content="WebMos">
     <meta property="og:locale" content="nb_NO">
     <meta property="og:type" content="article">
-
+    <meta name="description" content="På denne siden finner du kontaktinformasjonen vår">
     <!-- Twitter kort -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lurer du på hva CMS er?">
-    <meta name="twitter:description" content="På denne siden får du vite hva headless og seamless cms er, hvilke typer og systemer som finnes samt fordelene og ulempene med et slikt verktøy.">
+    <meta name="twitter:description"
+        content="På denne siden får du vite hva headless og seamless cms er, hvilke typer og systemer som finnes samt fordelene og ulempene med et slikt verktøy.">
     <title>Kontakt oss</title>
 </head>
 
@@ -29,120 +32,121 @@
     <div class="grid-container">
 
         <header>
-            <h1>Mostafa Haider - Webutvikling</h1>
-            <div class="container">
-                <div class="subcontainer">
-                    <nav class="navbar">
-                        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
-                        <ul class="nav-menu">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">Hjem</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="seouu.html" class="nav-link">UU vs SEO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="cms.html" class="nav-link">CMS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="analyse.html" class="nav-link">Analyse</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="kontakt.html" class="nav-link-k">Kontakt oss</a>
-                            </li>
-                        </ul>
-                        <div class="hamburger">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </nav>
+            <header>
+                <h1>Mostafa Haider - Webutvikling</h1>
+                <div class="container">
+                    <div class="subcontainer">
+                        <nav class="navbar">
+                            <!-- Logo er laget her: https://www.freelogodesign.org/ -->
+                            <a href="index.html"><img class="logo"
+                                    src="img/mostafa-web-low-resolution-logo-color-on-transparent-background.png"
+                                    alt="logo"></a>
+                            <ul class="nav-menu">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link">Hjem</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="seouu.html" class="nav-link">UU vs SEO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="cms.html" class="nav-link">CMS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="analyse.html" class="nav-link">Analyse</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="kontakt.html" class="nav-link-k">Kontakt oss</a>
+                                </li>
+                            </ul>
+                            <div class="hamburger">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <main>
-            <section class="top-section-innhold">
+            </header>
+            <main>
+                <section class="top-section-innhold">
 
-                <h2>Kontaktside </h2>
-                <article class="innhold-design kontakt-design">
+                    <h2>Kontaktside </h2>
+                    <article class="innhold-design kontakt-design">
 
-                    <!-- kilder brukt under er https://www.w3schools.com/html/html_forms.asp og https://www.youtube.com/watch?v=-xiXI7WT2ik&ab_channel=CodeRange
+                        <!-- kilder brukt under er https://www.w3schools.com/html/html_forms.asp og https://www.youtube.com/watch?v=-xiXI7WT2ik&ab_channel=CodeRange
                     og arbeidet mitt fra tidligere år. https://itstud.hiof.no/~mostafah/oblig5_/htmlskjema.html
                     -->
 
-                    <h3>Registreringsskjema</h3>
-                    <div id="kontakt">
-                        <form action="/skjema.html">
-                            <label>Navn:<br>
-                                <input type="text" name="name" required type="name" placeholder="Ola Normann">
-                            </label>
-                            <br>
-                            <label for="email">E-post:<br> </label>
-                            <input required type="email" id="email" name="email" placeholder="ola.normann@hiof.no">
-                            <br>
-                            <label for="phone">Tlf nummer:<br></label>
-                            <input type="tel" id="phone" name="phone" required="phone" maxlength="8"
-                                placeholder="45678900">
-                            <br>
-                            <label for="lang_melding"><span class="required"></span>Lenger melding:</label><br>
-                            <textarea id="lang_melding" name="lang_melding" cols="30" rows="5" required></textarea><br>
-                            <button type="submit" value="submit">Send inn</button>
-                        </form>
+                        <h3>Registreringsskjema</h3>
+                        <div id="kontakt">
+                            <form action="/skjema.html">
+                                <label>Navn:<br>
+                                    <input type="text" name="name" required type="name" placeholder="Ola Normann">
+                                </label>
+                                <br>
+                                <label for="email">E-post:<br> </label>
+                                <input required type="email" id="email" name="email" placeholder="ola.normann@hiof.no">
+                                <br>
+                                <label for="phone">Tlf nummer:<br></label>
+                                <input type="tel" id="phone" name="phone" required="phone" maxlength="8"
+                                    placeholder="45678900">
+                                <br>
+                                <label for="lang_melding"><span class="required"></span>Lenger melding:</label><br>
+                                <textarea id="lang_melding" name="lang_melding" cols="30" rows="5"
+                                    required></textarea><br>
+                                <button type="submit" value="submit">Send inn</button>
+                            </form>
 
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882761207628!2d11.35061461557406!3d59.1292502340913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1668521858446!5m2!1sno!2sno"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                
-                    
+                            <iframe title="Høgskolen i Østfold"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882761207628!2d11.35061461557406!3d59.1292502340913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1668521858446!5m2!1sno!2sno"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+
+
                         <ul id="kontaktfont">
-                           <div class="contact-border">
-                            <li><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                                <h3>E-post</h3>
-                            </li>
-                            <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
-                           </div>
-                           <div class="contact-border">
-                            <li><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                                <h3>Kontaktnummer</h3>
-                            </li>
-                            <p>Sentralbord: 69 60 80 00</p>
-                            <p>Faks: 69 60 80 01</p>
-                           </div>
-                           <div>
-                               <li><i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
-                                   <h3>Postadresse</h3>
-                               </li>
-                               <p>Høgskolen i Østfold</p>
-                               <p>Postboks 700</p>
-                               <p>1757 HALDEN</p>
-                           </div>
-                           
+                            <div class="contact-border">
+                                <li><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                                    <h3>E-post</h3>
+                                </li>
+                                <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
+                            </div>
+                            <div class="contact-border">
+                                <li><i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                                    <h3>Kontaktnummer</h3>
+                                </li>
+                                <p>Sentralbord: 69 60 80 00</p>
+                                <p>Faks: 69 60 80 01</p>
+                            </div>
+                            <div>
+                                <li><i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
+                                    <h3>Postadresse</h3>
+                                </li>
+                                <p>Høgskolen i Østfold</p>
+                                <p>Postboks 700</p>
+                                <p>1757 HALDEN</p>
+                            </div>
+
                         </ul>
-                  <!--   <div id="kontaktfont">
-                        <span id="email">
-                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-                            <h3>E-post</h3>
-                            <p>hhhhhhh</p>
-                        </span>
-                        <a href="mailto:postmottak@hiof.no">postmottak@hiof.no</a>
-                        <span id="telefon">
-                            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                                <h3>Kontaktnummer</h3>
-                        </span>
-                        <span id="adresse">
-                            <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i>
-                        </span>
-                    </div> -->
-                </article>
+
+                    </article>
 
 
-            </section>
-        </main>
-        <footer>
-            Mostafa Ali Haider || Mostafah@hiof.no || Webutvikling || Høgskolen i Østfold
-        </footer>
+                </section>
+            </main>
+            <footer>
+                Mostafa Ali Haider || Mostafah@hiof.no || Webutvikling || Høgskolen i Østfold
+                <div id="share">
+                    <h3>Del her:</h3>
+                    <a href="https://www.pinterest.com/" class="fa fa-pinterest fa-2x" aria-label="Pinterest"
+                        target="_blank"></a>
+                    <a href="https://www.twitter.com/" class="fa fa-twitter fa-2x" aria-label="Twitter"
+                        target="_blank"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook fa-2x" aria-label="Pinterest"
+                        target="_blank"></a>
+                </div>
+            </footer>
     </div>
     <script src="js/script.js"></script>
 </body>

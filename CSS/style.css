@@ -12,7 +12,6 @@
 
 /* ---------------------------------- MOBIL -------------------------------------- */
 
-
 .tabell {
    display: grid;
    grid-template-areas:
@@ -108,12 +107,24 @@ main {
    grid-area: main;
    flex-direction: row;
    gap: 1rem;
+   background: linear-gradient(white  , black );
+ 
+   /* background: linear-gradient(
+      to right,
+      #df5357 0%,
+      #df5357 50%,
+      #323660 50%,
+      #323660 100%
+   ); */
+   /* background-image: url('../img/background.avif');
+   background-repeat: no-repeat;
+   background-size: cover;  */
 }
 
 main img {
    width: 100%;
    border-radius: 10px;
-   height: 260px;
+   height: 350px;
 }
 
 main p {
@@ -124,7 +135,7 @@ main p {
    width: 100%;
    margin: 30px 0 20px 0;
    padding: 1rem;
-   background-color: rgb(99, 100, 98);
+   /* background-color: rgb(99, 100, 98); */
 
 }
 
@@ -132,7 +143,7 @@ main p {
    display: grid;
    padding: 1rem;
    gap: 1rem;
-   background-color: rgb(99, 100, 98);
+  /*  background-color: rgb(99, 100, 98); */
 }
 
 article {
@@ -148,8 +159,12 @@ article {
 .top-section-innhold {
    width: 100%;
    margin-top: 10px;
-   background-color: rgb(99, 100, 98);
+  /*  background-color: rgb(99, 100, 98); */
    padding: 15px;
+}
+.top-section article{
+   background: transparent;
+
 }
 
 .kilder {
@@ -172,35 +187,34 @@ footer {
    background-color: #000;
    padding: 1rem;
    color: #fff;
-
    bottom: 0;
-}
-.wrapper{
-   align-content: center;
    display: flex;
-   justify-content: center;
-}
-.media ul{
-   display: flex;
-   text-align: center;
-   
-}
-.media ul li{
-   position: relative;
-   display: block;
-   color: #666;
-   font-size: 30px;
-   height:60px;
-   width:60px;
-   background: #171515;
-   line-height: 60px;
-   border-radius: 50%;
-   margin: 5px 12px;
-   cursor: pointer;
-}
+   justify-content: space-between;
 
+}
+/* Delingsknapper */
+.fa-pinterest {
+   background: #cb2027;
+   color: white;
+   border: 5px solid red;
+   border-radius: 5px;
+ }
+ .fa-facebook {
+   background: #3B5998;
+   color: white;
+   border: 5px solid #3B5998;
+   border-radius: 5px;
+ }
+ .fa-twitter {
+   background: #55ACEE;
+   color: white;
+   border: 5px solid #55ACEE;
+   border-radius: 5px;
+ }
 
-
+#share{
+   gap: 10px;
+}
 /* html-skjema */
 input[type="text"] {
    margin-bottom: 9px;
@@ -244,37 +258,102 @@ iframe{
 #kontaktfont h3{
    margin-left: 10px;
 }
+
+
 #kontaktfont a{
-   color: #558e93;
-   text-decoration: underline;
-   margin-left: 15px;
-   margin-bottom: 3px;
+  color: #050505;
+  text-decoration: underline;
+  margin-left: 48px;
+  margin-bottom: 3px;
 }
 #kontaktfont p{
-   margin-left: 15px;
+   margin-left: 47px;
 }
-.contact-border{
+/* .contact-border{
    border-bottom: #515451 1px solid;
+} */
+
+#analyse-img{
+   width: 100%;
+   height:100%;
 }
 
+#cms-figure{
+float:right;
+
+
+}
+/* TEST */
+
+.mobile-container {
+   max-width: 480px;
+   margin: auto;
+   background-color: #555;
+   height: 500px;
+   color: white;
+   border-radius: 10px;
+ }
+ 
+ .topnav {
+   overflow: hidden;
+   background-color: #333;
+   position: relative;
+ }
+ 
+ .topnav #myLinks {
+   display: none;
+ }
+ 
+ .topnav a {
+   color: white;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+   display: block;
+ }
+ 
+ .topnav a.icon {
+   background: black;
+   display: block;
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+ 
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ 
+ .active {
+  /*  background-color: #000000; */
+   color: white;
+ }
+ 
+/* TEST */
+
+#tilgjengelig a{
+   color: red;
+   font-weight: 600;
+}
 /* --------------------------- Navigasjon mobil---------------------*/
 header{
-   background-image: url('../img/nasa.PNG');
+   background-image: url('../img/background.avif');
    top: 0;
    width: 100%;
    background-repeat: no-repeat;
-   background-size: cover; 
+/*    background-size: cover;  */
+  
    background-position: center;
    margin-bottom: -20px;
    height: 400px;
+   
 
 }
 header h1{
    text-align: center;
    font-style: oblique;
    padding-top: 5px;
-   color: white;
-   background-color: black;
 }
 
 
@@ -333,10 +412,10 @@ a.nav-link::after{
    position:absolute;
    width: 100%;
    transform:scaleX(0);
-   height: 2px;
+   height: 5px;
    bottom: 0;
    left: 0;
-   background: yellow;
+   background: #fcce22;
    transform-origin: bottom left;
    transition: transform 0.40s ease-in;
 }
@@ -345,9 +424,9 @@ a.nav-link:hover:after{
    transform-origin: bottom right;
 }
 .logo{
-   height: 180px;
+   /* height: 180px; */
    width: 180px;
-   margin-left: -76px;
+   /* margin-left: -76px; */
    margin-bottom: -14px;   
 }
 .hamburger{
@@ -356,31 +435,48 @@ a.nav-link:hover:after{
 }
 .bar{
    display: block;
-   width: 25px;
-   height: 3px;
+   width: 37px;
+   height: 5px;
    margin: 5px 0;
    transition: all 0.5s ease;
-   background-color: rgb(255, 255, 255);
+   background-color: #DF5155;
+   font-weight: 900;
 }
 
-/*----------------------------------Navigasjon mobil slutter her -----------------------------------------  */
-@media(max-width:1600px){
-   .container{
-   width: 100%;
-   }
-   .navbar{
-       margin-top: -46px;
-       font-size: large;
-       position: sticky;
-   }
 
+/*----------------------------------Navigasjon mobil slutter her -----------------------------------------  */
+@media (min-width:648px) and (max-width:870){
+   .top-section{
+      /* width:50%; */
+      background-color: #cb2027;
+      display: flex;
+      justify-content: center;
+   }
+  .top-section article{
+     width: 72%;
+     background-color: green;
+}
+.article-section {
+      display: grid;
+      padding: 1rem;
+      gap: 1rem;
+      background-color: rgb(99, 100, 98);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+   article{
+      max-width: 67%;
+      
+   } 
 } 
 
 /* for inspirasjon til hamburger meny, 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor
 https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
 */
-@media(max-width: 1024px){ 
+@media(max-width: 870px){ 
    .hamburger{
        display:block;
    }
@@ -425,26 +521,98 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
    .nav-menu.active{
        left: 0;
    }
+   .nav-link-k
+   {color: black;}
 } 
-.nav-link-k
-{color: black;}
 
 
 /* ------------------------------------------ MELLOM TELEFON OG PC = Nettbrett -------------------------------- */
-@media only screen and (min-width:601px) and (max-width: 999px) {
+@media  (min-width:770px) and (max-width: 1099px) {
    .tabell {
       font-size: medium;
    }
+      .top-section{
+      display: flex;
+      justify-content: center;
+   }
+  .top-section article{
+     width: 72%;
+   }
+.article-section {
+      display: grid;
+      padding: 1rem;
+      gap: 1rem;
+      /* background-color: rgb(99, 100, 98); */
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+   /* article{
+      max-width: 67%;
+      
+   }  */
+   .hamburger{
+      display:block;
+  }
 
+  .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu{
+      position: relative ;
+      left: -120%;
+      top: 70px;
+      flex-direction: column;
+      background-color: gainsboro;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+     top: 242px;
+     /* 191 */
+     
+      
+  }
+  .nav-item{
+      margin: 16px 0;
+      border:5px black solid;
+      width: 100%;
+      height: 100%;
+      align-self: center;
+  }
+  a.nav-link{
+      color: black;
+  }
+  .navbar{
+      margin-top: 70px;
+  }
+  
+  .nav-menu.active{
+      left: 0;
+  }
+  .nav-link-k
+  {color: black;}
+  .logo{
+   height: 69px;
+   width: 275px;
+}
 
-   .top {
+} 
+
+   /* top {
       background-color: beige;
       padding: 5px;
       border: 1px solid black;
    }
 
 
-   /* Venstre side boxes */
+ 
    .cms {
       border: 1px solid black;
       padding: 5px;
@@ -454,7 +622,6 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
 
 
 
-   /* Fordel boxes */
    .fordel {
       border: 1px solid black;
       padding: 5px;
@@ -465,7 +632,6 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
 
 
 
-   /* ulempe boxes */
    .ulempe {
       border: 1px solid black;
       padding: 5px;
@@ -474,15 +640,14 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
 
 
 
-   /* likhet boxes */
    .likhet {
       border: 1px solid black;
       padding: 5px;
       background-color: white;
 
-   }
+   } */
 
-
+/* 
    article {
 
       width: 100%;
@@ -497,10 +662,16 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
       border-top: 2px solid #515451;
       padding-top: 17px;
    }
-}
+   #kontaktfont p{
+      margin-left: 15px;
+   }
+   #kontaktfont a{
+      margin-left: 15px;
+   } */
+   
 
 /* ------------------------------------------------- DESKTOP ------------------------------------------- */
-@media (min-width:1000px) {
+@media (min-width:1100px) and (max-width: 1599px){
    .grid-container {
 
       width: 100%;
@@ -525,22 +696,33 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
       gap: 1rem;
 
    }
-
-   main img {
-      width: 100%;
-      border-radius: 10px;
-
+   main img{
+      height: 300px;
    }
+.navbar{
+   margin: 19px;
+}
 
+.logo{
+   height: 69px;
+   width: 275px;
+   margin-left:-52px;
+}
 
+.nav-menu{
+   font-size: x-large;
+   margin-right: -1em;
+}
+.nav-menu a{
+   color: #000;
+}
 
    .top-section {
-      width: 700px;
+      display: flex;
+      justify-content: center;
       margin: 30px 0 20px 0;
       padding: 1rem;
-      background-color: rgb(99, 100, 98);
-
-
+      /* background-color: rgb(99, 100, 98); */
    }
 
    .top-section-innhold {
@@ -548,9 +730,10 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
       margin-top: 10px;
 
    }
-   /* .top-section-innhold h2{
-      color: white;
-   } */
+   
+   .top-section article{
+      width: 55%;
+    }
 
    .innhold-design {
       width: 100%;
@@ -574,8 +757,8 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
 
 
    .nav-link-k {
-      background-color: rgb(252, 224, 101);
-      border: 10px rgb(252, 224, 101) solid;
+      background-color: #fce065;
+      border: 10px #fce065 solid;
       border-radius: 5px;
 
    }
@@ -623,13 +806,14 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
    }
 
 
-   #headless {
+   /* #headless {
       display: flex;
-   }
+   } */
 
    #headless-img {
       width: 500px;
-      margin-left: 1px;
+     
+      height: 350px ;
    }
 
    #seo-img {
@@ -643,17 +827,203 @@ https://www.youtube.com/watch?v=zuAmsj2EN54&ab_channel=codefoxx
 
    #kontaktfont{
       list-style: none;
-      
       display: flex;
       justify-content: center;
       gap: 231px;
-      margin-top: 51px;
+      margin-top: 10px;
       border-top: 2px solid #515451;
       padding-top: 17px;
    }
 
-   #kontaktfont{
+   #kontaktfont li{
+      margin-left: -27px;
+   }
+   #kontaktfont a{
+      margin-left: 15px;
+ 
+   }
+   #kontaktfont p{
+      margin-left: 15px;
+   }
+   .contact-border{
+      list-style: none;
+   }
+}
+
+@media (min-width:1600px) {
+   .grid-container {
+
+      width: 100%;
+      display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "header header header header"
+         "main main main main"
+         "footer footer footer footer"
+      ;
+
+
+   }
+
+   header {
+      grid-area: header;
+   }
+
+   main {
+      grid-area: main;
+      padding: 2rem;
+      gap: 1rem;
+
+   }
+
+.navbar{
+   margin: 19px;
+}
+
+.logo{
+   height: 69px;
+   width: 275px;
+}
+
+.nav-menu{
+   font-size: x-large;
+}
+.nav-menu a{
+   color: #000;
+}
+   .top-section {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0 20px 0;
+      padding: 1rem;
+      /* background-color: rgb(99, 100, 98);
+ */   
+      
+
+   }
+
+   .top-section-innhold {
+      width: 90;
       margin-top: 10px;
+
+   }
+   /* .top-section-innhold h2{
+      color: white;
+   } */
+   .top-section article{
+      width: 56%;
+    }
+
+   .innhold-design {
+      width: 100%;
+   }
+
+   article {
+      width: 100%;
+      padding: 1rem;
+      color: black;
+      border-radius: 0 5px 5px 5px;
+   }
+
+   .article-section {
+      display: flex;
+      padding: 2rem;
+   }
+
+   .article-section article {
+      color: black;
+   }
+   
+
+
+   .nav-link-k {
+      background-color: #fce065;
+      border: 10px #fce065 solid;
+      border-radius: 5px;
+
+   }
+
+   /* Tabellen for PC */
+   .tabell {
+      font-size: larger;
+   }
+
+   .top {
+      background-color: beige;
+      padding: 10px;
+      border: 1px solid black;
+   }
+
+
+   /* cms boxes */
+   .cms {
+      border: 1px solid black;
+      padding: 10px;
+      background-color: beige;
+   }
+
+   /* fordel boxes */
+   .fordel {
+      border: 1px solid black;
+      padding: 10px;
+      background-color: white;
+   }
+
+
+   /* ulempe boxes */
+   .ulempe {
+      border: 1px solid black;
+      padding: 10px;
+      background-color: white;
+   }
+
+
+   /* likhet boxes */
+   .likhet {
+      border: 1px solid black;
+      padding: 10px;
+      background-color: white;
+   }
+
+
+   /* #headless {
+      display: flex;
+   } */
+
+   #headless-img {
+      width: 500px;
+     
+      height: 350px ;
+   }
+
+   #seo-img {
+      width: 500px;
+      margin-left: 1px;
+      float: right;
+   }
+   #kontakt{
+      display: flex;
+   }
+
+   #kontaktfont{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 231px;
+      margin-top: 10px;
+      border-top: 2px solid #515451;
+      padding-top: 17px;
+   }
+
+   #kontaktfont li{
+      margin-left: -27px;
+   }
+   #kontaktfont a{
+      margin-left: 15px;
+ 
+   }
+   #kontaktfont p{
+      margin-left: 15px;
    }
    .contact-border{
       list-style: none;
